@@ -34,13 +34,13 @@ exports.findAll = (req, res) => {
 
 exports.findOne = (req, res) => {
     Destination.findById(req.params.destinationId)
-    .then(note => {
-        if(!note) {
+    .then(destination => {
+        if(!destination) {
             return res.status(404).send({
                 message: "Note not found with id " + req.params.destinationId
             });            
         }
-        res.send(note);
+        res.send(destination);
     }).catch(err => {
         if(err.kind === 'ObjectId') {
             return res.status(404).send({

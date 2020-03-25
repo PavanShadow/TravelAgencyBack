@@ -7,6 +7,7 @@ exports.create = (req, res) => {
         address: req.body.address,
         price: req.body.price,
         imageUrl: req.body.imageUrl,
+        facilities: req.body.facilities
     });
 
     
@@ -60,6 +61,7 @@ exports.update = (req, res) => {
         address: req.body.address,
         price: req.body.price,
         imageUrl: req.body.imageUrl,
+        facilities: req.body.facilities
     }, {new: true})
     .then(hotel => {
         if(!hotel) {

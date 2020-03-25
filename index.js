@@ -30,6 +30,18 @@ mongoose.connect(dbConfig.url, {
 app.get('/', (req, res) => {
     res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
 });
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+    );
+    if (req.method === "OPTIONS") {
+      res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+      return res.status(200).json({});
+    }
+    next();
+});
 
 require('./app/routes/destination.routes.js')(app);
 

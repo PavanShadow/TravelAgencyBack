@@ -12,6 +12,7 @@ var Destination = mongoose.model('Destination', {
             type: {type: String},
             rating: {type: Number},
             price: {type: Number},
+            imageUrl: {type: String}
 
         }
     ],

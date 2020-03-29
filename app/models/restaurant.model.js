@@ -9,35 +9,29 @@ var Restaurant = mongoose.model('Restaurant', {
         {
             breakfast: [
                 {
-                    items: [
-                        {
-                            name: { type: String },
-                            price: { type: Number },
 
-                        }
-                    ]
+                    name: { type: String },
+                    price: { type: Number },
+
+
                 }
             ],
             lunch: [
                 {
-                    items: [
-                        {
-                            name: { type: String },
-                            price: { type: Number },
 
-                        }
-                    ]
+                    name: { type: String },
+                    price: { type: Number },
+
+
                 }
             ],
             dinner: [
                 {
-                    items: [
-                        {
-                            name: { type: String },
-                            price: { type: Number },
 
-                        }
-                    ]
+                    name: { type: String },
+                    price: { type: Number },
+
+
                 }
             ]
         }

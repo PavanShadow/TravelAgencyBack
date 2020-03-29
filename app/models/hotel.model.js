@@ -8,11 +8,11 @@ var Hotel = mongoose.model('Hotel', {
     imageUrl: { type: String },
     facilities: [
         {
-            no_of_beds: {type: Number},
-            free_wifi: {type: Boolean},
-            breakfast_availability: {type: Boolean},
-            bar_availability: {type: Boolean},
-            pool_availability: {type: Boolean},
+            no_of_beds: { type: Number },
+            free_wifi: { type: Boolean },
+            breakfast_availability: { type: Boolean },
+            bar_availability: { type: Boolean },
+            pool_availability: { type: Boolean },
 
         }
     ],

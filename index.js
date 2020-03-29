@@ -46,6 +46,7 @@ app.use((req, res, next) => {
 
 require('./app/routes/destination.routes.js')(app);
 require('./app/routes/hotel.routes.js')(app);
+require('./app/routes/restaurant.routes.js')(app);
 
 // listen for requests
 const port = process.env.PORT || 3000;

@@ -4,6 +4,7 @@ var Restaurant = mongoose.model('Restaurant', {
     name: { type: String },
     location: { type: String },
     foodType: { type: String },
+    imageUrl: { type: String },
     menus: [
         {
             breakfast: [

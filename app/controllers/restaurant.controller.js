@@ -6,6 +6,7 @@ exports.create = (req, res) => {
         name: req.body.name,
         location: req.body.location,
         foodType: req.body.foodType,
+        imageUrl: req.body.imageUrl,
         menus: req.body.menus
     });
 
@@ -58,6 +59,7 @@ exports.update = (req, res) => {
         name: req.body.name,
         location: req.body.location,
         foodType: req.body.foodType,
+        imageUrl: req.body.imageUrl,
         menus: req.body.menus
     }, { new: true })
         .then(restaurant => {

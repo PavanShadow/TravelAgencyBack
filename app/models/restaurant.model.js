@@ -13,38 +13,36 @@ var Restaurant = mongoose.model('Restaurant', {
                         {
                             name: { type: String },
                             price: { type: Number },
-                            
+
                         }
                     ]
                 }
-            ]
-        },
-        {
+            ],
             lunch: [
                 {
                     items: [
                         {
                             name: { type: String },
                             price: { type: Number },
-                            
+
                         }
                     ]
                 }
-            ]
-        },
-        {
+            ],
             dinner: [
                 {
                     items: [
                         {
                             name: { type: String },
                             price: { type: Number },
-                            
+
                         }
                     ]
                 }
             ]
         }
+
+
     ]
 });
 

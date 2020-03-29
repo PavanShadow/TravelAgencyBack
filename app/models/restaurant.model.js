@@ -13,7 +13,7 @@ var Restaurant = mongoose.model('Restaurant', {
                         {
                             name: { type: String },
                             price: { type: Number },
-                            teaOrCoffe: { type: Boolean }
+                            
                         }
                     ]
                 }
@@ -26,7 +26,7 @@ var Restaurant = mongoose.model('Restaurant', {
                         {
                             name: { type: String },
                             price: { type: Number },
-                            juice: { type: Boolean }
+                            
                         }
                     ]
                 }
@@ -39,7 +39,7 @@ var Restaurant = mongoose.model('Restaurant', {
                         {
                             name: { type: String },
                             price: { type: Number },
-                            liquor: { type: Boolean }
+                            
                         }
                     ]
                 }
